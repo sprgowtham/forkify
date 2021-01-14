@@ -75,7 +75,7 @@ const init = function () {
   searchView.addhandlerSearch(controlSearchResult);
   paginationView.addHandlerClick(controlPagination);
   newFeautre();
-  console.log('Continuous Integration and Continuous Deployement');
+  console.log('Continuous Integration and Continuous Deployement.');
 };
 
 init();
