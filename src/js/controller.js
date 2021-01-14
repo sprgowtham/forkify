@@ -59,8 +59,12 @@ const controlPagination = function (goToPage) {
 
   resultsView.render(model.getSearchResultsPage(goToPage));
 
-    //4.Render new pagination 
-    paginationView.render(model.state.search);
+  //4.Render new pagination
+  paginationView.render(model.state.search);
+};
+
+const newfeature = function () {
+  console.log('New Feautre simulation for git');
 };
 
 // controlSearchResult('pizza');
@@ -70,7 +74,7 @@ const init = function () {
   recipeView.addHandlerRender(controlRecipe);
   searchView.addhandlerSearch(controlSearchResult);
   paginationView.addHandlerClick(controlPagination);
-  console.log('Welcome!');
+  newFeautre();
 };
 
 init();
